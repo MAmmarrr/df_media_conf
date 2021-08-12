@@ -1,0 +1,13 @@
+{% load static %}
+<h1>THIS IS WORKING </h1>
+<h1>ADD_ITEM</h1>
+{% if Success %}
+<p>Item has been added Succesfully!!</p>
+{% endif %}
+<form method='POST' action="{% url 'product:add_item' %}">{%csrf_token%}
+    <input type="text" name='name' placeholder="Item Name">
+    <input type="number" name='price' placeholder="Price">
+    <input type="text" name='description' >
+    <input type="file" name='item_image'>
+    <input type='submit'>
+</form>
