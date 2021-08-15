@@ -24,7 +24,6 @@ SECRET_KEY = 'django-insecure-igi)&skq)f$0h2+z2$j2%@n+-pwu%p3r&p70u3s7!i5jb^_)i2
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-print(BASE_DIR)
 ALLOWED_HOSTS = []
 
 
@@ -75,12 +74,20 @@ WSGI_APPLICATION = 'root_app.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+   'default': {
+      'ENGINE' : 'djongo',
+      
+       'NAME' : 'sample_airbnb', #as named on server
+      'CLIENT': {
+       'host' : 'mongodb+srv://root_amr:1two3four56@initial-cluster.xlyb9.mongodb.net/sample_airbnb?retryWrites=true&w=majority',           
+        },
 
+       'USER' : 'root_amr',
+
+       'PASSWORD' : '1two3four56',
+
+   }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
