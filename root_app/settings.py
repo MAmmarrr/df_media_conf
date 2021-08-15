@@ -76,13 +76,12 @@ WSGI_APPLICATION = 'root_app.wsgi.application'
 DATABASES = {
    'default': {
       'ENGINE' : 'djongo',
-      
+    
        'NAME' : 'sample_airbnb', #as named on server
       'CLIENT': {
        'host' : 'mongodb+srv://root_amr:1two3four56@initial-cluster.xlyb9.mongodb.net/sample_airbnb?retryWrites=true&w=majority',           
         },
 
-       'USER' : 'root_amr',
 
        'PASSWORD' : '1two3four56',
 
