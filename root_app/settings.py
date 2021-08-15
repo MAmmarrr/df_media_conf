@@ -82,6 +82,7 @@ DATABASES = {
        'host' : 'mongodb+srv://root_amr:1two3four56@initial-cluster.xlyb9.mongodb.net/sample_airbnb?retryWrites=true&w=majority',           
         },
 
+       'USER' : 'root_amr',
 
        'PASSWORD' : '1two3four56',
 
