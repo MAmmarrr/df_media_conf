@@ -3,6 +3,7 @@
 <h1>ADD_ITEM</h1>
 {% if Success %}
 <p>Item has been added Succesfully!!</p>
+<img>
 {% endif %}
 <form method='POST' action="{% url 'product:add_item' %}">{%csrf_token%}
     <input type="text" name='name' placeholder="Item Name">
