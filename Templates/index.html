@@ -6,9 +6,9 @@
 <img>
 {% endif %}
 <form method='POST' action="{% url 'product:add_item' %}">{%csrf_token%}
-    <input type="text" name='name' placeholder="Item Name">
-    <input type="number" name='price' placeholder="Price">
-    <input type="text" name='description' >
-    <input type="file" name='item_image'>
+    <input type="text" name='name' placeholder="Item Name" required>
+    <input type="number" name='price' placeholder="Price" required>
+    <input type="text" name='description' required>
+    <input type="file" name='item_image' required>
     <input type='submit'>
 </form>

@@ -78,7 +78,7 @@ DATABASES = {
       'ENGINE' : 'djongo',
     
        'NAME' : 'sample_airbnb', #as named on server
-      'CLIENT': {
+       'CLIENT': {
        'host' : 'mongodb+srv://root_amr:1two3four56@initial-cluster.xlyb9.mongodb.net/sample_airbnb?retryWrites=true&w=majority',           
         },
 
